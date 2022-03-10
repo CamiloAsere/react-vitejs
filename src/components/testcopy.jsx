@@ -8,7 +8,7 @@ export const Fetch = (
   column3='Edad',
   column4='Location',
   column5='foto',
-  alink='https://camp-tgbot.herokuapp.com/api'}) => {
+  alink='http://camp-tgbot.herokuapp.com/api'}) => {
   let link=alink;
   let {data}=UseFetch(link);
   return (
