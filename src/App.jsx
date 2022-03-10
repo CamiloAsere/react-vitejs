@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Pages } from './components/rutas'
 import  background from "./assets/connected-city.jpg";
+import { Rutas } from './rutas';
 function App() {
   const [count, setCount] = useState(0)
   const style = {
@@ -21,8 +21,9 @@ function App() {
             count is: {count}
           </button>
         </p>
-       <Pages/>
+       
       </header>
+      <Rutas/>
     </div>
   )
 }
