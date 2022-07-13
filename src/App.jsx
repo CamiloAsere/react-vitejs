@@ -15,13 +15,20 @@ function App() {
 useEffect( ( ) => {
 tele.ready()
 } )
+  
+const onCheckout = () => {
+    tele.MainButton.text = "Pay :)";
+    tele.MainButton.show();
+  };
   return (
     <div className="container" >
       <header className="jumbotron" /*style={style}*/ >
         <b>
         <p>Hello Vite + React!</p>
         </b>
-        
+        <button type="button" onClick={onCheckout}>
+            count is: {count}
+          </button>
         <p>
           <button type="button" onClick={() => setCount((count) => count + 1)}>
             count is: {count}
