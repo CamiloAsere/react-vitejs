@@ -1,14 +1,20 @@
-import { useState } from 'react'
+import { useState , useEffect } from 'react'
 import  background from "./assets/connected-city.jpg";
 import { Rutas } from './rutas';
+const tele=window.Telegram.WebApp
+
 function App() {
   const [count, setCount] = useState(0)
+  
   const style = {
     backgroundImage: `url(${background})`, 
     width: "100%",
     height: "400px",
     
   };
+useEffect( ( ) => {
+tele.ready()
+} )
   return (
     <div className="container" >
       <header className="jumbotron" /*style={style}*/ >
