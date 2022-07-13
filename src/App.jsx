@@ -31,7 +31,7 @@ const onCheckout = () => {
           </button>
         <p>
           <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
+            nada
           </button>
         </p>
        
