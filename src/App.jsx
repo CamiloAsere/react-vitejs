@@ -2,7 +2,7 @@ import { useState , useEffect } from 'react'
 import  background from "./assets/connected-city.jpg";
 import { Rutas } from './rutas';
 //Telegram.WebApp.offEvent('backButtonClicked', callback
-const tele=Telegram.WebApp.offEvent('backButtonClicked', callback)
+const tele=window.Telegram.WebApp.offEvent('backButtonClicked', callback)
 function App() {
   const [count, setCount] = useState(0)
   
