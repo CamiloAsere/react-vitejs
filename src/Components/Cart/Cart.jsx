@@ -13,7 +13,7 @@ function Cart({ cartItems, onCheckout }) {
         title={`${cartItems.length === 0 ? "Order !" : "Checkout"} `}
         type={"checkout"}
         disable={cartItems.length === 0 ? true : false}
-        /* onClick={onCheckout} */
+        onClick={onCheckout} 
       />
       
     </div>
